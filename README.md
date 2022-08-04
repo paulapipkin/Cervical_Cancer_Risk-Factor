@@ -1,9 +1,9 @@
 
-# Sales Prediction 
+# Cervical Cancer Risk
 
 By **Paula Pipkin** 
 
-### Evaluating Cervical Cancer risk :
+### Evaluating Cervical Cancer Risk :
 
 Based on features of the items being sold and some relevant features of the stores selling those items, we will try to predict future sales.
 
