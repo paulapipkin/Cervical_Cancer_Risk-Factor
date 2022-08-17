@@ -25,16 +25,20 @@ The data set source is the website UCI Machine Learning Repository and here is a
 
 
 
-#### Heat Map for numerical Features
+#### Cervical Cancer among Patients with HPV
 ![sample image](plot1.png)
 
-> The best correlation with the target is with Max retail price.
+> Out of 835 patients, 1/3 or 33% of those patients diagnosed with HPV were also diagnosed with cervical cancer, only 5% of those without HPV were diagnosed with Cervical Cancer.
 
-#### Sales of 2 different items and their respectives prices
+"Virtually all cervical cancers are caused by HPV. Routine screening can prevent most cervical cancers by allowing health care providers to find and remove precancerous cells before they develop into cancer." (source: https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents#hpv).
+
+#### Cervical Cancer vs Period of Hormonal Contraceptives Use
 
 ![sample image](plot2.png)
 
-> Even though MRP has the best correlation to Sales, it still does not explain why for the items above the sales do not vary according to the different prices.
+> The longer a woman uses oral contraceptives, the greater the increase in her risk of cervical cancer. One study found a 10% increased risk for less than 5 years of use, a 60% increased risk with 5–9 years of use, and a doubling of the risk with 10 or more years of use (source: https://www.cancer.gov/about-cancer/causes-prevention/risk/hormones/oral-contraceptives-fact-sheet)
+
+In our sample, 18% more women were diagnosed with Cervical Cancer among those patients using Hormonal Contraceptive for longer than 10 years.
 
 #### Showing metrics for testing data:
 
