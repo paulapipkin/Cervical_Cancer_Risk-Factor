@@ -18,12 +18,14 @@ The data set source is the website UCI Machine Learning Repository and here is a
 
 - After some pre cleaning, two copies of the data were made so EDA could be done without risking leakage.  
 - EDA was used to show correlations between some relevant features
-- X models were applied, Linear Regression, Decision Tree and Random Forrest
+- 3 models were applied, Random Forrest, KNN and Lgbm
 
 
 ## Results
 
+LGBM had the best results and it was the model chosen to be used.
 
+### EDA
 
 #### Patients with HPV
 ![sample image](plot1.png)
@@ -40,23 +42,24 @@ The data set source is the website UCI Machine Learning Repository and here is a
 
 > The longer a woman uses oral contraceptives, the greater the increase in her risk of cervical cancer. One study found a 10% increased risk for less than 5 years of use, a 60% increased risk with 5–9 years of use, and a doubling of the risk with 10 or more years of use (source: https://www.cancer.gov/about-cancer/causes-prevention/risk/hormones/oral-contraceptives-fact-sheet)
 
+### Metrics
 
-#### Showing metrics for testing data:
+#### Scores and Confusion Matrix:
 
-| Model         | RMSE                   | R2       |
+Accuracy 0.96
+
+| Score        | Classe 0                   | Classe 1       |
 | ------------- | -----------------------| -------- |
-| Linear Regression | 30002	 | 000 |
-| Decision Tree |000             | 0006  |
-| Random Forrest|000	|000	
+| Precision | 0.98	 | 0.69 |
+| Recall |0.97             |0.79  |
 
 
+![sample image](confusionmatrix.jpg)
 
 ## Recommendations, Limitations & Next Steps:
 
-- *not yet* 
-
-
-- *not yet*  
+- For this case, a false posite and a false negative are very serious errors, a patient without cancer should not be subimitted to treatment, and a positive result can't go untreated.
+- Having that in mind, I still believe that our model is useful, however I would suggest that a second measure would be used to confirm the results prior to treatment or dismissal of treatment.
 
 ### For further information
 
